@@ -9,6 +9,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r diamonds, echo=FALSE}
 library(ggplot2)
+library(rmarkdown)
 
 diamonds |> 
   ggplot2::ggplot(aes(x = carat, y = price)) +
